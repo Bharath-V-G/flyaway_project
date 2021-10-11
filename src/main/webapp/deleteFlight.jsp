@@ -28,13 +28,9 @@ if(session.getAttribute("mail")!=null)
 <h1>Insert New Flight Details</h1>
 
 <div style="border:3px solid black;width:25%;border-radius:20px;padding:20px" align="center">
-<form action=InsertFlight method=post>
-	<label for=flightid>Flight ID(unique) :-</label> <input type="text" name=flightid id=flightid /><br><br>
-	<label for=name>Name :-</label> <input type="text" name=name id=name /><br><br>
-	<label for=source>Source :-</label> <input type="text" name=source id=source /><br><br>
-	<label for=destination>Destination :-</label> <input type="text" name=destination id=destination /><br><br>
-	<label for=day>Date :-</label> <input type="text" name=day id=day /><br><br>
-	<label for=price>Ticket Price :-</label> <input type="text" name=price id=price /><br><br>
+<form action=DeleteFlight method=post>
+	<label for=flightid>Flight ID :-</label> <input type="text" name=flightid id=flightid /><br><br>
+	
 	<input type=submit value=submit /> <input type=reset />
 </form>
 </div>

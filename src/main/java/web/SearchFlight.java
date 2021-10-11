@@ -11,11 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//import com.model.Search;
 
-/**
- * Servlet implementation class SearchFlight
- */
 @WebServlet("/SearchFlight")
 public class SearchFlight extends HttpServlet {
 	
@@ -26,10 +22,12 @@ public class SearchFlight extends HttpServlet {
 	        Search.source = request.getParameter("source");
 	        Search.destination = request.getParameter("destination");
 	        Search.persons = Integer.parseInt(request.getParameter("persons"));
-
+	        response.setContentType("text/html");
 	        if (Search.date.equals("")) {
-	            
-	            out.println("Please enter a valid date");
+	        	out.println("<h2><font color= red>Please enter a valid date</h2>");
+				out.println("</font >");
+			request.getRequestDispatcher("SearchFlight.jsp").include(request, response);
+	           // out.println("Please enter a valid date");
 	        }
 	        else {
 	        	try {
@@ -40,14 +38,12 @@ public class SearchFlight extends HttpServlet {
 	        	}
 	        	catch(Exception e)
 	        	{
-	        		out.println("Please enter a valid date");	
+	        		out.println("<h2><font color= red>Please enter a valid date</h2>");
+				out.println("</font >");
+			request.getRequestDispatcher("SearchFlight.jsp").include(request, response);
+	        		//out.println("Please enter a valid date");	
 	        	}
-	        	//out.println(Search.date);
-	        
-	           // out.println(Search.day);
-	        	
-//	        	Search.day = Search.date;
-//	        	response.sendRedirect("SearchResult.jsp");
+	
 	        } 
 		
 		

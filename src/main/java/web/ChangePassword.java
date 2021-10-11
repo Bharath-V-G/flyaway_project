@@ -10,13 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-//import com.URegistration.dao.ChangePasswordAdmindao;
 
-
-
-/**
- * Servlet implementation class ChangePassword
- */
 @WebServlet("/ChangePassword")
 public class ChangePassword extends HttpServlet {
 	
@@ -43,14 +37,16 @@ public class ChangePassword extends HttpServlet {
 		        }
 		        else if (session.getAttribute("mail")!=null && !pass.equals("")){
 		             if(cdao.check(pass)){
-		            	 out.println("Password changed. New Password is "+pass);
+		            
 		            	 response.setContentType("text/html");
 		            	 out.println();
 		            	 out.println();
 		            	 out.println();
 		            	 out.println();
 		            	 out.println();
-		            	 out.println("<a href=\"AdminLogin.jsp\">Admin Login</a>");
+		            	 out.println("<h2><font color= green>Password changed Successfully</h2>");
+		 				out.println("</font >");
+		 			request.getRequestDispatcher("AdminDashboard.jsp").include(request, response);
 		             }
 		            
 		        }

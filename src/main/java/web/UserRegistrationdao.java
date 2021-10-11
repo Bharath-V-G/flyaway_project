@@ -9,11 +9,7 @@ import java.sql.Statement;
 import util.InItConn;
 public class UserRegistrationdao {
 	
-	
-	
-//	String url ="jdbc:mysql://localhost:3306/flyawaydb";
-//	String username="root";
-//	String password="1234";
+
 	String sql = "INSERT INTO user(Name,Email,PassWord) VALUES (?,?,?);";
 	public Connection con=null;
 	public Statement st=null;
@@ -23,9 +19,7 @@ public class UserRegistrationdao {
 		try {
 			
 			con = new InItConn().getConnection();
-		//	Class.forName("com.mysql.jdbc.Driver");
-			//Class.forName("com.mysql.cj.jdbc.Driver");
-			//Connection con = DriverManager.getConnection(url,username,password);
+
 			
 			PreparedStatement st = con.prepareStatement(sql);
 			

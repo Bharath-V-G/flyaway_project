@@ -10,12 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-//import com.URegistration.dao.AdminLogindao;
-//import com.URegistration.dao.Logindao;
 
-/**
- * Servlet implementation class AdminLogin
- */
 @WebServlet("/AdminLogin")
 public class AdminLogin extends HttpServlet {
 	
@@ -28,8 +23,7 @@ public class AdminLogin extends HttpServlet {
 		
 		PrintWriter out = response.getWriter();
 		
-		//out.println(email+" "+pass);
-		
+		response.setContentType("text/html");
 		
 		AdminLogindao logindao = new AdminLogindao();
 		
@@ -37,24 +31,23 @@ public class AdminLogin extends HttpServlet {
 		
 		
 		if(logindao.check(email,pass)){
-			
-//			HttpSession session = request.getSession();
-//			
-//			session.setAttribute("username", uname);
-		//	out.println("User Logged In Successfully");
+
 			
 			HttpSession session = request.getSession();
 			
 			session.setAttribute("mail",email);
-			//session.setAttribute("name",name);
+		
 			out.println("Admin Logged In Successfully");
 				
 	        response.sendRedirect("AdminDashboard.jsp");
 			
 		}
 		else{
-			  
-	            out.println("Login Failed : Incorrect email or Password");
+			out.println("<h2><font color= red>Incorrect username and password</h2>");
+			out.println("</font >");
+		//	out.println("User Not Registered");
+			request.getRequestDispatcher("AdminLogin.jsp").include(request, response);
+	           
 	            
 	            
 

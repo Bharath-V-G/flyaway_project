@@ -8,9 +8,7 @@ import java.sql.Statement;
 import util.InItConn;
 
 public class ChangePasswordAdmindao {
-//	String url ="jdbc:mysql://localhost:3306/flyawaydb";
-//	String username="root";
-//	String password="1234";
+
 	String sql = "Update AdminLogin set PassWord=? Where Email=?;";
 	public Connection con=null;
 	public Statement st=null;
@@ -22,8 +20,7 @@ public class ChangePasswordAdmindao {
 			
 			Class.forName("com.mysql.jdbc.Driver");
 			con = new InItConn().getConnection();
-			//Connection con = DriverManager.getConnection(url,username,password);
-			
+	
 			PreparedStatement st = con.prepareStatement(sql);
 			
 			

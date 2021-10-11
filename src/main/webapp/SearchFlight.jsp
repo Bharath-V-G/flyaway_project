@@ -58,6 +58,13 @@ if(session.getAttribute("email")!=null)
           <label for="source">Source</label>
                     <select  id="source" name="source">
                         <option value="India">India</option>
+                         <option value="Canada">Canada</option>
+                         <option value="Japan">Japan</option>
+                         <option value="Germany">Germany</option>
+                         <option value="Switzerland">Switzerland</option>
+                           <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                         <option value="Ireland">Ireland</option>
                         <option value="China">China</option>
                         <option value="Australia">Australia</option>
                         <option value="Dubai">Dubai</option>
@@ -67,8 +74,7 @@ if(session.getAttribute("email")!=null)
                         <option value="Ukraine">Ukraine</option>
                         <option value="Iran">Iran</option>
                         <option value="Israel">Israel</option>
-                        <option value="USA">USA</option>
-                        <option value="UK">UK</option>
+           
                     </select>
         
         
@@ -79,16 +85,27 @@ if(session.getAttribute("email")!=null)
         
            <label for="destination">Destination</label>
                     <select  id="destination" name="destination">
-                        <option value="USA">USA</option>
+                    
+                            <option value="USA">USA</option>
+                     <option value="India">India</option>
+                         <option value="Canada">Canada</option>
+                         <option value="Japan">Japan</option>
+                         <option value="Germany">Germany</option>
+                         <option value="Switzerland">Switzerland</option>
+                   
                         <option value="UK">UK</option>
-                        <option value="India">India</option>
-                        <option value="Armenia">Armenia</option>
-                        <option value="Pakistan">Pakistan</option>
+                         <option value="Ireland">Ireland</option>
+                        <option value="China">China</option>
                         <option value="Australia">Australia</option>
                         <option value="Dubai">Dubai</option>
-                        <option value="Ukraine">Ukraine</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Thailand">Thialand</option>
                         <option value="Singapore">Singapore</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Iran">Iran</option>
                         <option value="Israel">Israel</option>
+                        <option value="Pakistan">Pakistan</option>
+       
                         
                     </select>
         
@@ -104,6 +121,11 @@ if(session.getAttribute("email")!=null)
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
         
         

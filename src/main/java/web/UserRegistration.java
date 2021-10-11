@@ -15,10 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//import com.URegistration.dao.UserRegistrationdao;
-/**
- * Servlet implementation class UserRegistration
- */
+
 @WebServlet("/UserRegistration")
 public class UserRegistration extends HttpServlet {
 	private static final long serialVersionUID = 1L;

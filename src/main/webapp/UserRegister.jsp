@@ -24,7 +24,7 @@
      <td><input name="name"  type="text" maxlenght=50></td>
     </tr>
     <tr>
-     <td>Email</td>
+     <td>Email(Unique)</td>
      <td><input name="email" type="email"  maxlength=100></td>
     </tr>
  <tr>
@@ -42,8 +42,8 @@
         <button type="submit" value="Submit">Sign Up</button>
        </div>
      </form>
-     
-    
+     <br>
+
     </div>
  </div>
 

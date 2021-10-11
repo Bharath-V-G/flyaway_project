@@ -10,9 +10,7 @@ import util.InItConn;
 //import util.InItConn;
 public class Logindao {
 
-//	String url ="jdbc:mysql://localhost:3306/flyawaydb";
-//	String username="root";
-//	String password="1234";
+
 	String sql = "select * from user where PassWord=? and Email=?";
 	public Connection con=null;
 	public Statement st=null;

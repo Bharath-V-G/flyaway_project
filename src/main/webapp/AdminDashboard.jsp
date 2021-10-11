@@ -54,7 +54,21 @@ if(session.getAttribute("mail")!=null)
                 <button type="submit" >Add flight</button>
             </form>&ensp;
         </div>
-       
+         <div >
+            <form method="post" action="${pageContext.request.contextPath}/deleteFlight.jsp">
+                <button type="submit" >Delete flight</button>
+            </form>&ensp;
+        </div>
+                <div >
+            <form method="post" action="${pageContext.request.contextPath}/PlaceList.jsp">
+                <button type="submit" >Master List of Places</button>
+            </form>&ensp;
+        </div>
+                 <div >
+            <form method="post" action="${pageContext.request.contextPath}/FlightList.jsp">
+                <button type="submit" >Master List of Airlines</button>
+            </form>&ensp;
+        </div>
        <br>
 
 </div>
