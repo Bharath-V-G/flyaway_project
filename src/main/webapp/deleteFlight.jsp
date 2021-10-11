@@ -25,7 +25,7 @@ if(session.getAttribute("mail")!=null)
             </form>&ensp;
         </div>
 <center>
-<h1>Insert New Flight Details</h1>
+<h1>Delete Flight Details</h1>
 
 <div style="border:3px solid black;width:25%;border-radius:20px;padding:20px" align="center">
 <form action=DeleteFlight method=post>
